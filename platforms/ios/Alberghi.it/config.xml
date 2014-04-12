@@ -81,4 +81,7 @@
     </feature>
     <gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
     <access origin="*" />
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
 </widget>

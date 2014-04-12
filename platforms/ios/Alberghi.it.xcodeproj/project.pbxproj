@@ -41,6 +41,7 @@
 		879DC12CA7E241B781CFE957 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E6D3283E674FC7AEFB0CB7 /* CDVInAppBrowser.m */; };
 		2BC8917FCBF748FDB786AB9E /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF893248D60D414AA74276D4 /* CDVStatusBar.m */; };
 		10F86423DDEC498CAB4A6213 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA30C6239B649B59F60306A /* CDVLogger.m */; };
+		BF95C846199C4076BA18B99A /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53501DCBE00A4BEB9E29794A /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		B6A5D509692A4FAA960F623F /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		9DA30C6239B649B59F60306A /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "org.apache.cordova.console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		1BA160C6D8EE4A128E1C892C /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		53501DCBE00A4BEB9E29794A /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		942F56A5AC9D4E7CBC95FADA /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 				B6A5D509692A4FAA960F623F /* CDVStatusBar.h */,
 				9DA30C6239B649B59F60306A /* CDVLogger.m */,
 				1BA160C6D8EE4A128E1C892C /* CDVLogger.h */,
+				53501DCBE00A4BEB9E29794A /* CDVLocation.m */,
+				942F56A5AC9D4E7CBC95FADA /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "Alberghi.it/Plugins";
@@ -434,6 +439,7 @@
 				879DC12CA7E241B781CFE957 /* CDVInAppBrowser.m in Sources */,
 				2BC8917FCBF748FDB786AB9E /* CDVStatusBar.m in Sources */,
 				10F86423DDEC498CAB4A6213 /* CDVLogger.m in Sources */,
+				BF95C846199C4076BA18B99A /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
