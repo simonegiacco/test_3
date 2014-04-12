@@ -271,11 +271,19 @@
 							$('#list-view1 a').off();
 							$('#list-view1 a').on('click', function(e) {
 								var linkurl = $(e.currentTarget).attr('href');
+								$.mobile.showPageLoadingMsg();
 								e.preventDefault();
 								var ref = window.open(linkurl, '_blank');
 								ref.addEventListener('exit', function() {
+									$.mobile.hidePageLoadingMsg();
 									ref.close();
 								});
+								ref.addEventListener('loadstop', function() {
+									$.mobile.hidePageLoadingMsg();
+								});
+								ref.addEventListener('loaderror', function() {
+									$.mobile.hidePageLoadingMsg();
+								})
 							});
 						}
 					} catch(e) {
