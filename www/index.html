@@ -266,16 +266,20 @@
 					$header.find( "h1" ).html(data.title );
 					$content.html(markup)
 
-					if (data.list.items[0].url) {
-						$('#list-view1 a').off();
-						$('#list-view1 a').on('click', function(e) {
-							var linkurl = $(e.currentTarget).attr('href');
-							e.preventDefault();
-							var ref = window.open(linkurl, '_blank');
-							ref.addEventListener('exit', function() {
-								ref.close();
+					try {
+						if (data.list.items[0].url) {
+							$('#list-view1 a').off();
+							$('#list-view1 a').on('click', function(e) {
+								var linkurl = $(e.currentTarget).attr('href');
+								e.preventDefault();
+								var ref = window.open(linkurl, '_blank');
+								ref.addEventListener('exit', function() {
+									ref.close();
+								});
 							});
-						});
+						}
+					} catch(e) {
+
 					}
 
 					if (pageType === '#guide-city') {
@@ -283,6 +287,9 @@
 						$page.attr('data-add-back-btn', true);
 					}
 					else if (pageId !== '#sconti_all' && pageId.indexOf('#sconti_') !== -1) {
+						$page.attr('data-add-back-btn', true);
+					}
+					else if (pageId.indexOf('#guide-city_')) {
 						$page.attr('data-add-back-btn', true);
 					}
 					else {
